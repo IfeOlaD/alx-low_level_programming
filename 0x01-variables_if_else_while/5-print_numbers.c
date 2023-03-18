@@ -12,7 +12,8 @@ char c;
 
 for (c = '0'; c <= '9'; c++)
 {
-printf("\n");
+putchar(c);
 }
+printf("\n");
 return (0);
 }

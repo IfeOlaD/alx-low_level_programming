@@ -12,7 +12,7 @@ int c;
 
 for (c = 'o'; c <= '9'; c++)
 {
-putchar(c % 10);
+putchar((c % 10) + '0');
 if (c == 9)
 continue;
 putchar(',');

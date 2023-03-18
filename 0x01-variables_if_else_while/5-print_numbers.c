@@ -9,7 +9,7 @@
 int main(void)
 {
 char c;
-printf("0, 9");
+
 for (c = '0'; c <= '9'; c++)
 {
 printf("\n");

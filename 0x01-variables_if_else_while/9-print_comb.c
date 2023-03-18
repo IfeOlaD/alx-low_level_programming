@@ -9,19 +9,14 @@
 int main(void)
 {
 int c;
-int b;
 
 for (c = 'o'; c <= '9'; c++)
 {
-for (b = '0'; b <= '9'; b++)
-{
-putchar(b);
-if (b != 9 || c != 9)
-{
+putchar(c % 10);
+if (c == 9)
+continue;
 putchar(',');
 putchar(' ');
-}
-}
 }
 putchar('\n');
 return (0);

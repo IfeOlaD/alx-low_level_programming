@@ -15,12 +15,14 @@ for (b = '0'; b <= '9'; b++)
 for (c = '1'; c <= '9'; c++)
 {
 if (b < c)
+{
 putchar(b);
 putchar(c);
 if (b != 8 || c != 9)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }

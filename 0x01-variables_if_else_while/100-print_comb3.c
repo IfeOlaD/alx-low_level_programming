@@ -15,7 +15,7 @@ for (b = '0'; b <= '9'; b++)
 for (c = '1'; c <= '9'; c++)
 {
 if (b < c)
-if (c != '9')
+if (b != '9')
 {
 putchar(b);
 putchar(c);

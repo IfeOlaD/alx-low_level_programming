@@ -10,6 +10,6 @@
 void jack_bauer(void)
 {
 int c;
-for (c = 00:00; c <= 23:59; c++)
+for (c = 00; c <= 23; c++)
 _putchar(c);
 }

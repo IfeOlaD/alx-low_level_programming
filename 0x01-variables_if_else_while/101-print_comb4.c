@@ -8,19 +8,19 @@
 
 int main(void)
 {
+int a;
 int b;
 int c;
-int a;
-for (b = 0; b < 8; b++)
+for (a = 0; a < 8; a++)
 {
-for (c = b + 1; c < 9; c++)
+for (b = a + 1; b < 9; b++)
 {
-for (a = c + 1; a < 10; a++)
+for (c = b + 1; c < 10; c++)
 {
+putchar(a + '0');
 putchar(b + '0');
 putchar(c + '0');
-putchar(a + '0');
-if (b != 7 || c != 8 || a != 9)
+if (a != 7 || b != 8 || c != 9)
 {
 putchar(',');
 putchar(' ');

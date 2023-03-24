@@ -15,7 +15,7 @@ for (h = 00; h < 24; h++)
 {
 for (m = 00; m < 60; m++)
 {
-_putchar("%02d:%02d\n", m, h);
+printf("%02d:%02d\n", m, h);
 }
 }
 }

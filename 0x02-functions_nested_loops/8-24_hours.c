@@ -3,7 +3,7 @@
 
 /**
  * jack_bauer - prints all minutes of 24 hours
- * 
+ *
  *
  * Return: Always 0
  */

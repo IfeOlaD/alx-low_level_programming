@@ -14,8 +14,8 @@ for (b = 0; b < 9; b++)
 {
 for (c = b + 1; c < 10; c++)
 {
-putchar(b);
-putchar(c);
+putchar(b + '0');
+putchar(c + '0');
 if (b != 8 || c != 9)
 {
 putchar(',');

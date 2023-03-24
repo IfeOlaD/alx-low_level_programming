@@ -30,7 +30,7 @@ printf("%d", a);
 }
 if (a < 100)
 {
-printf(' ');
+printf(" ");
 }
 putchar('\n');
 }

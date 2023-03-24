@@ -11,5 +11,5 @@ void jack_bauer(void)
 {
 int c;
 for (c = 00; c <= 23; c++)
-_putchar(c);
+_putchar(c + '0');
 }

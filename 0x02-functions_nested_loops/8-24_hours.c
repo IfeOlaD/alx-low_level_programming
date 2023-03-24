@@ -9,7 +9,13 @@
 
 void jack_bauer(void)
 {
-int c;
-for (c = 00; c <= 23; c++)
-_putchar(c + '0');
+int h;
+int m;
+for (h = 00; h < 24; h++)
+{
+for (m = 00; m < 60; m++)
+{
+_putchar("%02d:%02d\n", m, h);
+}
+}
 }

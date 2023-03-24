@@ -10,11 +10,9 @@ int main(void)
 {
 int b;
 int c;
-for (b = '0'; b <= '9'; b++)
+for (b = 0; b < 9; b++)
 {
-for (c = '1'; c <= '9'; c++)
-{
-if (b < c)
+for (c = b + 1; c < 10; c++)
 {
 putchar(b);
 putchar(c);
@@ -22,7 +20,6 @@ if (b != 8 || c != 9)
 {
 putchar(',');
 putchar(' ');
-}
 }
 }
 }

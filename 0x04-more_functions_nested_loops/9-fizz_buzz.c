@@ -32,7 +32,5 @@ if (a < 100)
 {
 printf(" ");
 }
-/*putchar('\n');*/
 }
-return (0);
 }

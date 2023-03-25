@@ -14,11 +14,11 @@ int c;
 if (size <= 0)
 {
 _putchar('\n');
-return ();
+return;
 }
 for (a = 1; a <= size; a++)
 {
-for (b = 0; b < size - 1; b++)
+for (b = 0; b < size - a; b++)
 _putchar(' ');
 for (c = 0; c < a; c++)
 _putchar('#');

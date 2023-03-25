@@ -13,6 +13,7 @@ unsigned int num = n;
 if (n < 0)
 {
 _putchar(' ');
+num = -n;
 }
 if (num / 10)
 print_number(num / 10);

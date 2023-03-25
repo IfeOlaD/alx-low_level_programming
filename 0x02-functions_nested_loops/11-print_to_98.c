@@ -1,0 +1,18 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * print_to_98 - Entry point
+ *
+ * @n: the integer
+ * Return: o
+ */
+
+void print_to_98(int n)
+{
+for (n = 0; n <= 98; n++)
+{
+_putchar(',');
+_putchar(' ');
+}
+}

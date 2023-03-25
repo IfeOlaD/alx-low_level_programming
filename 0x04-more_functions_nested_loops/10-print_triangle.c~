@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * print_triangle - Entry point
+ * @size: the size of the triangle
+ * Return: 0
+ */
+
+void print_triangle(int size)
+{
+  int a;
+  int b;
+  for (a = size; 

@@ -1,0 +1,13 @@
+#include "main.h"
+
+/**
+ * add - Entry point
+ *
+ *
+ * Return: 0
+ */
+
+int add(int a, int b)
+{
+return (a + b);
+}

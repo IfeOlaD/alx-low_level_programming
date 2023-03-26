@@ -18,4 +18,5 @@ b = b + a;
 printf("%d", a);
 }
 printf("\n");
+return (0);
 }

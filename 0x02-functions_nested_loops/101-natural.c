@@ -19,5 +19,5 @@ b += 1;
 }
 }
 printf("%d\n", b);
-return (b + a);
+return (0);
 }

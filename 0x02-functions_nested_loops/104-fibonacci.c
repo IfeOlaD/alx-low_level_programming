@@ -8,9 +8,9 @@
 int main(void)
 {
 unsigned long a = 1, b = 2;
-
+int i;
 printf("%lu,%lu", a, b);
-for (int i = 0; i < 96; i++)
+for (i = 0; i < 96; i++)
 {
 unsigned long temp = b;
 b = a + b;

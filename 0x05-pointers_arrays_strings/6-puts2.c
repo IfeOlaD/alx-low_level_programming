@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * puts2 - Print all string character
@@ -11,7 +12,7 @@ void puts2(char *str)
 int a;
 for (a = 0; str[a] != '\0'; a += 2)
 {
-_putchar(str[a]);
+putchar(str[a]);
 }
-_putchar('\n');
+putchar('\n');
 }

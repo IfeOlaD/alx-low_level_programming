@@ -10,24 +10,22 @@ int _atoi(char *s)
 {
 int result = 0;
 int sign = 1;
-int started = 0;
+int a = 0;
+int b = 0;
 
-while (*s != '\0')
+while (s[a] != '\0' && (s[a] < '0' || s[a] > '9'))
 {
-if (*s == '-')
-{
+if (s[a] == '-')
 sign *= -1;
+a++;
 }
-else if (*s >= '0' && *s <= '9')
+b = a;
+while (s[b] != '\0' && s[b] >= '0' && s[b] <= '9')
+b++;
+while (a < b)
 {
-result = result * 10 + (*s = '0');
-started = 1;
+result = result * 10 + s[a] - '0';
+a++;
 }
-else if (started)
-{
-break;
-}
-s++;
-}
-return (result * sign);
+return (result *sign);
 }

@@ -12,6 +12,9 @@ int a;
 int b;
 int c; 
 int largest(a, b, c);
+ a = 972;
+ b = -98;
+ c = 0;
 
 if (a > b && a > c)
 {

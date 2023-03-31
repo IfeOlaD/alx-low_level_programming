@@ -1,0 +1,27 @@
+#include "main.h"
+
+/**
+ * *rot13 - Rotate by 13 places
+ * @a: character
+ * Return: a
+ */
+
+char *rot13(char *a)
+{
+int c, d;
+char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+for (c = 0; a[c] != '\0'; c++)
+{
+for (d = 0; input[d] != '\0'; d++)
+{
+if (a[c] == input[d])
+{
+a[c] = output[j];
+break;
+}
+}
+}
+return (a);
+}

@@ -14,11 +14,11 @@ void print_buffer(char *b, int size)
 int a, c;
 for (a = 0; a < size; a += 10)
 {
-printf("%08x:", a);
+printf("%08x: ", a);
 for (c = 0; c < 10; c++)
 {
 if (a + c < size)
-printf("%02x ", b[a + c]);
+printf("%02x", b[a + c]);
 else
 printf("   ");
 }

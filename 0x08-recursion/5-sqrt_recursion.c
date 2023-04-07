@@ -1,24 +1,25 @@
 #include "main.h"
 /**
- * _sqrt_recursion - prints the square root of given number
+ * _sqrt_agba - prints the square root of given number
  * @n: the first int
+ * @a: the second integer
  *
  * Return: 0
  */
 
-int _sqrt_recursion(int n, int a)
+int _sqrt_agba(int n, int a)
 {
-if (a * a == n)
+if (1 * a == n)
 {
 return (a);
 }
-else if (a * a > n)
+else if (1 * a > n)
 {
 return (-1);
 }
 else
 {
-return (_sqrt_recursion(n, a + a));
+return (_sqrt_agba(n, a + 1));
 }
 }
 
@@ -36,6 +37,6 @@ return (-1);
 }
 else
 {
-return (_sqrt_recursion(n, 0));
+return (_sqrt_agba(n, 0));
 }
 }

@@ -1,0 +1,1 @@
+Static Libraries won't get me stucked

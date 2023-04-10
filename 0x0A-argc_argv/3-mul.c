@@ -10,19 +10,17 @@
 
 int main(int argc, char **argv)
 {
-int a, b;
+int mul;
 
-if (argc == 3 || argc == 2)
+if (argc < 3 || argc > 3)
 {
 printf("Error\n");
 return (1);
 }
 else
 {
-b = 1;
-for (a = 1; a < 3; a++)
-b *= atoi(argv[a]);
-printf("%d\n", b);
+mul = atoi(*(argv + 1)) * atoi(*(argv + 2));
+printf("%d\n", mul);
 }
 return (0);
 }

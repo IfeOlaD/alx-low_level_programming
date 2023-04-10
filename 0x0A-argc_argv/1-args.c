@@ -9,10 +9,6 @@
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
-int a;
-for (a = 1; a < argc; a++)
-{
 printf("%d\n", argc - 1);
-}
 return (0);
 }

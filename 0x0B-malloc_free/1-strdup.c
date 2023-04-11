@@ -1,0 +1,28 @@
+#include "main.h"
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * _strdup - retruns pointer to a new memory
+ * @str: string
+ * Return: string
+ */
+
+char *_strdup(char *str)
+{
+char *d_str;
+int len;
+
+if (str == NULL)
+return (NULL);
+
+len = strlen(str);
+d_str = malloc((len + 1) * sizeof(char));
+
+if (d_str == NULL)
+return (NULL);
+
+strcpy(d_str, str);
+
+return (d_str);
+}

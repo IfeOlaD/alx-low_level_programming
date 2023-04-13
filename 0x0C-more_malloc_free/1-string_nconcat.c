@@ -1,10 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * string_nconcat - contatenate 2 strings
  * @n: the unsigned int
+ * @s1: the first char
+ * @s2: the second char
  * Return: 0
  */
 
@@ -30,6 +32,6 @@ strcpy(result, s1);
 if (s2 != NULL)
 strncpy(result + len1, s2, n);
 
-result[len + n] = '\0';
+result[len1 + n] = '\0';
 return (result);
 }

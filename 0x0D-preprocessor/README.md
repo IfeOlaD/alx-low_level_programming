@@ -1,0 +1,1 @@
+Preprocessor modifies source codes before it is handled by the compiler

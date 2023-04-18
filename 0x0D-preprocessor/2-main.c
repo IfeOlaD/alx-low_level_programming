@@ -2,4 +2,10 @@
 
 /**
  * main - print line
- * 
+ * Return: 0
+ */
+
+int main(void)
+{
+printf("__FILE__");
+}

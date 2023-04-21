@@ -3,26 +3,29 @@
 #include <stdio.h>
 
 /**
- * print_numbers - a function that print numbers
- * @separator: the string printed between numbers
+ * print_strings - print strings
+ * @separator: the string printed between strings
  * @n: the unsigned int
  * Return: 0
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list args;
 unsigned int a;
-int num;
-  
+char *str;
+
 va_start(args, n);
 for (a = 0; a < n; a++)
 {
-num = va_arg(args, int);
-printf("%d", num);
+str = va_arg(args, char *);
+if (str == NULL)
+printf("(nil)");
+else
+printf("%s", str);
 if (a != n - 1 && separator != NULL)
 printf("%s", separator);
 }
-printf("\n");
 va_end(args);
+printf("\n");
 }

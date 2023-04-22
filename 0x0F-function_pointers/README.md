@@ -1,0 +1,1 @@
+Function pointers are variables that store the memory address of a function.

@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 /**
  * print_all - prints all types of arguments

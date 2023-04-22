@@ -1,40 +1,51 @@
 #include <stdio.h>
+#include "function_pointers.h"
 
 /**
- * print_name - a function that prints name
- * @name: the name to be printed
- * @f: the function
- * Return: 0
+ * print_name_as_is - prints a name as is
+ * @name: name of the person
+ *
+ * Return: Nothing.
  */
-
-void print_name(char *name, void(*f)(char *))
+void print_name_as_is(char *name)
 {
-f(name);
+printf("Hello, my name is %s\n", name);
 }
 
 /**
- * print_my_name - the function
- * @name: the name to be printed
- * Return: 0
+ * print_name_uppercase - print a name in uppercase
+ * @name: name of the person
+ *
+ * Return: Nothing.
  */
+void print_name_uppercase(char *name)
+{
+int b;
 
-void print_my_name(char *name)
+b = 0;
+while (name[b])
 {
-int a;
-for (a = 0; name[a]; a++)
+if (name[b] >= 'a' && name[b] <= 'z')
 {
-printf("%c", name[a]);
+putchar(name[b] + 'A' - 'a');
 }
-printf("\n");
+else
+{
+putchar(name[b]);
+}
+b++;
+}
 }
 
 /**
- * main - Entry point
- * Return: 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
 int main(void)
 {
-print_name("Legend", print_my_name);
+print_name("Bob", print_name_as_is);
+print_name("Bob Dylan", print_name_uppercase);
+printf("\n");
 return (0);
 }

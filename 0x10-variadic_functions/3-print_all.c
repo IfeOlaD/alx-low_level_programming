@@ -15,21 +15,28 @@ char *string;
 int a = 0;
 
 va_start(vl, format);
- while (format != NULL && format[a] != '\0')
+while (format != NULL && format[a] != '\0')
 {
-if (format[a] == 'i')
+switch (format[a])
+{
+case 'i':
 printf("%d", va_arg(vl, int));
-else if (format[a] == 'f')
+break;
+case 'f':
 printf("%lf", va_arg(vl, double));
-else if (format[a] == 'c')
+break;
+case 'c':
 printf("%c", (char) va_arg(vl, int));
-else if (format[a] == 's')
-{
+break;
+case 's':
 string = va_arg(vl, char *);
 if (string == NULL)
+{
 printf("(nil)");
-else
+break;
+}
 printf("%s", string);
+break;
 }
 if ((format[a] == 'c' || format[a] == 'i' || format[a] == 'f'
 || format[a] == 's') && format[(a + 1)] != '\0')

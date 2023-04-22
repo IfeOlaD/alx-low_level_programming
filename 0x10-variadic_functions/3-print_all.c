@@ -20,7 +20,7 @@ while (format != NULL && format[a] != '\0')
 switch (format[a])
 {
 case 'i':
-printf("%d", va_arg(vl, int));
+printf("%i", va_arg(vl, int));
 break;
 case 'f':
 printf("%lf", va_arg(vl, double));

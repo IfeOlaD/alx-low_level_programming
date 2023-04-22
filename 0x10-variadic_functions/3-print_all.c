@@ -16,32 +16,26 @@ char *string;
 int a = 0;
 
 va_start(vl, format);
-while (format != NULL && format[a] != '\0')
+while (format[a])
 {
 switch (format[a])
 {
+case 'c':
+printf("%c", (char) va_arg(vl, int));
+break;
 case 'i':
 printf("%i", va_arg(vl, int));
 break;
 case 'f':
-printf("%lf", va_arg(vl, double));
-break;
-case 'c':
-printf("%c", (char) va_arg(vl, int));
+printf("%f", va_arg(vl, double));
 break;
 case 's':
 string = va_arg(vl, char *);
 if (string == NULL)
-{
 printf("(nil)");
-break;
-}
 printf("%s", string);
 break;
 }
-if ((format[a] == 'c' || format[a] == 'i' || format[a] == 'f'
-|| format[a] == 's') && format[(a + 1)] != '\0')
-printf(", ");
 a++;
 }
 printf("\n");

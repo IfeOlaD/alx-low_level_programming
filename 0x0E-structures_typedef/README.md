@@ -1,0 +1,1 @@
+Typedef is used to assign alternative names to dataa types

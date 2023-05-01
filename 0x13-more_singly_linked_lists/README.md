@@ -1,0 +1,1 @@
+This project implements a singly linked list data structure in the C programming language. A singly linked list is a linear data structure that consists of sequence of nodes, each containing data and a reference to the next node in the list.

@@ -1,8 +1,0 @@
-#include <stdlib.h>
-#include "lists.h"
-
-/**
- * *add_nodeint - adds a node in the beginning of a list
- * @head: the double pointer to the head of the list
- * @n: the integer to be included in the new node
- * Return: adr

@@ -1,0 +1,1 @@
+Bit manipulation is the act of algorithmically bits or other pieces of data shorter than a byte.

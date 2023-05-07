@@ -25,7 +25,19 @@ if (b[a] != '0' && b[a] != '1')
 return (0);
 }
 
-result = result + (b[a] - '0') * pow(2, len - a - 1);
+result += (b[a] - '0') * pow(2, len - a - 1);
 }
+return (result);
+}
+
+/**
+ * main - entry point
+ * Return: void
+ */
+
+int main(void)
+{
+char *binary = "110";
+unsigned int result = binary_to_uint(binary);
 return (result);
 }

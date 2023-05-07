@@ -15,7 +15,7 @@ int len;
 int a;
 result = 0;
 len = strlen(b);
-
+unsigned int pow;
 if (b == NULL)
 return (0);
 for (a = 0; a < len; a++)

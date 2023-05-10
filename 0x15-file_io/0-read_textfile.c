@@ -56,10 +56,30 @@ return (bytes_written);
 
 /**
  * main - Entry point
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0
  */
 
-int main(void)
+int main(int argc, char *argv[])
 {
-printf("Hello World\n");
+const char *filename;
+size_t letters;
+ssize_t bytes_written;
+
+if (argc != 2)
+{
+fprintf(stderr, "%s <filename>\n", argv[0]);
+return (1);
+}
+filename = argv[1];
+letters = 1024;
+
+bytes_written = read_textfile(filename, letters);
+if (bytes_written == 0)
+{
+fprintf(stderr, "%s\n", filename);
+return (1);
+}
+return (0);
 }

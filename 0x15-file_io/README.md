@@ -1,1 +1,0 @@
-File I/O (Input/Output) refers to the process of reading data from or writing data to a file.

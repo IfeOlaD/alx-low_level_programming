@@ -1,5 +1,5 @@
-#include "mani.h"
-#include <Stdio.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
  * binary_to_uint - entry point

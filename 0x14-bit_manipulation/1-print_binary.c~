@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * print_binary - a function that prints the binary of input numbers
+ * @n: the input numbers
+ * Return: 0
+ */
+
+void print_binary(

@@ -1,0 +1,1 @@
+This is a C project that deals with input, output and manipulation of files with C programming language from the ide

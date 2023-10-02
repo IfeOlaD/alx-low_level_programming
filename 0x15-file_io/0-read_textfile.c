@@ -49,13 +49,14 @@ return (n_written);
 #include <unistd.h>
 
 /**
- * read_textfile - read and return the number of letters in a file
+ * read_textfil - read and return the number of letters in a file
  * @filename: the pointer to the name of the file
  * @letters: the letters in the file
  * Return: 0
  */
 
-int main(const char *filename, size_t letters)
+ssize_t read_textfil(const char *filename, size_t letters)
 {
 open("test", O_RDONLY | O_CREAT);
+return (0);
 }

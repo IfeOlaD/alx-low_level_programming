@@ -1,1 +1,1 @@
-This the repo containning my C code.
+This is the repository containning my C code.

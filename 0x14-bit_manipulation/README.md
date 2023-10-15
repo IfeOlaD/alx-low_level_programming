@@ -1,0 +1,1 @@
+This project deals with the manipulation of data shorter than a byte
